@@ -8,13 +8,17 @@
 }
 :root{
     --fuenteHeading: 'PT sans',sans-serif;
-    --fuenteParrafos: 'Open sans', sans-serif;
+   /*  --fuenteParrafos: 'Open sans', sans-serif; */
     --colorMain: #ff9000;
     --colorOro: #D0A37C;
+    --colorOroOscuro: #7e634c;
     --colorGris: #696969;
     --colorGreen: #025051;
     --fuenteMain: 'Playfair Display',serif;
     --fuenteOld: 'Merriweather', serif;
+    --fuenteParrafos: 'Merriweather Sans', sans-serif;
+    --colorSecundario: #39374d;
+    /* Titulos 25 20  15px  parrafos 20 15 13px */
 }
 /* Globales */
 .contenedor{
@@ -27,9 +31,12 @@
     width: 100%;
     z-index: 10;
 }
+.center{
+    text-align: center;
+}
 /* Navegacion sucundario */
 .navegation-secondary-bg{
-    border-top: 1px  var(--colorOro);
+    border-top: 0.5px  var(--colorOro);
     border-bottom: 1px solid var(--colorOro);
     background-color: #ffffff;
 }
@@ -249,3 +256,295 @@
         height: 100%;
     }
 }
+
+/* Presentación */
+.presentation{
+    text-align: center; 
+}
+.presentation__img{
+    padding: 130px 0px;
+}
+.presentation__img img{
+    height: 250px;
+}
+.presentation__title{
+    font-family: var(--fuenteOld);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: var(--colorOro);
+}
+.presentation__description{
+    font-family: var(--fuenteParrafos);
+    font-size: 20px;
+    color: var(--colorGreen);
+}
+
+@media (max-width: 857px) {
+    .presentation__img img{
+        height: 165px;
+    }
+    .presentation__img {
+        padding: 70px 0px;
+    }
+    .presentation__title{
+        font-size: 17px;
+    }
+    .presentation__description{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .presentation__img img{
+        height: 145px;
+    }
+    .presentation__img {
+        padding: 50px 0px;
+    }
+    .presentation__title{
+        font-size: 15px;
+    }
+    .presentation__description{
+        font-size: 13px;
+    }
+}
+
+/* Menu slider */
+.menu{
+    text-align: center;
+    font-size: 25px;
+}
+.menu h4{
+    margin: 50px 0px;
+    text-transform: uppercase;
+    font-family: var(--fuenteOld);
+    color: var(--colorOro);
+}
+.container-slider-menu{
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid #fff;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%)
+}
+
+.slider__menu{
+    display: flex;
+    width: 800%;
+    height: 100%;
+}
+.slider__section--menu{
+    width: 100%;
+}
+
+@media (max-width: 857px) {
+    .menu h4{
+        font-size: 17px;
+        margin: 40px 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu h4{
+        font-size: 15px;
+        margin: 30px 0px;
+    }
+}
+
+/* Menu with prices info*/
+
+
+.menu-text-info{
+    text-align: center;
+    margin: 50px 0px;
+}
+.menu-text__line{
+    height: 2px;
+    width: 130px;
+    background-color: var(--colorOro);
+    margin: auto;
+    margin-bottom: 30px;
+}
+.menu-text__title{
+    color: var(--colorOro);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: var(--fuenteOld);
+    margin-bottom: 10px;
+}
+.menu-text__description{
+    color: var(--colorGreen);
+    font-size: 20px;
+    font-family: var(--fuenteParrafos);
+}
+.menu-text__btns{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: var(--colorOro);
+    border-top: 1px solid var(--colorOro);
+    border-bottom: 1px solid var(--colorOro);
+    padding: 20px 0px;
+}
+.menu-text__btns h4{
+    font-size: 25px;
+    font-family: var(--fuenteOld);
+    cursor: pointer ;
+}
+
+.btn-active{
+    border-bottom: 3px solid var(--colorOro);
+}
+
+/* Items price and description */
+.menu-text-dishes{
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+}
+.dish-content{
+    padding: 10px 0px;
+    transition: 1s;
+}
+.dish{
+    display: flex;
+    justify-content: space-between;
+}
+.dish h5{
+    white-space: nowrap;
+    color: var(--colorOroOscuro);
+    font-family: var(--fuenteOld);
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.dish__line{
+    /* display: table-cell; */
+    border-bottom: 1px dashed #999;
+    width: 100%;
+    height: 3px;
+    margin-top: 25px;
+}
+.dish__description{
+    font-size: 20px;
+    color: var(--colorGreen);
+    font-family: var(--fuenteParrafos);
+    width: 85%;
+}
+.dish .dish__price{
+    color: var(--colorOro); 
+}
+
+/* Ocultar platos/fondos */
+.hide-menu{
+    display: none;
+}
+
+/* Btn ver completo */
+
+.btn-menu-completo{
+    max-width: 800px;
+    margin: 20px auto;
+}
+.btn-menu-completo a{
+    background-color: var(--colorOro);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px 8px;
+    font-size: 25px;
+    transition: 0.2s;
+    font-family: var(--fuenteOld);
+}
+.btn-menu-completo a:hover{
+    color: var(--colorOro);
+    background-color: var(--colorGreen);
+}
+@media (max-width: 857px) {
+    .menu-text__title{
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    .menu-text__description{
+        font-size: 15px;
+    }
+    .menu-text-info{
+        text-align: center;
+        margin: 40px 0px;
+    }
+    .menu-text__line{
+        height: 2px;
+        width: 90px;
+        margin-bottom: 22px;
+    }
+    .menu-text__btns{
+        gap: 40px;
+        padding: 16px 0px;
+    }
+    .menu-text__btns h4{
+        font-size: 20px;
+    }
+    /* Textos title y description */
+    .menu-text-dishes{
+        margin: 40px auto 0 auto;
+    }
+    .dish__line{
+        margin-top: 18px;
+    }
+    .dish h5{
+        font-size: 20px;
+    }
+    .dish__description{
+        font-size: 15px;
+    }
+    .btn-menu-completo a{
+        display: block;
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .menu-text__title{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .menu-text__description{
+        font-size: 13px;
+    }
+    .menu-text-info{
+        text-align: center;
+        margin: 30px 0px;
+    }
+    .menu-text__line{
+        height: 1px;
+        width: 90px;
+        margin-bottom: 20px;
+    }
+    /* Botones menu */
+    .menu-text__btns{
+        gap: 15px;
+        padding: 10px 0px;
+    }
+    .menu-text__btns h4{
+        font-size: 15px;
+    }
+    /* Textos title y description */
+    .menu-text-dishes{
+        margin: 30px auto 0 auto;
+    }
+    .dish__line{
+        margin-top: 15px;
+    }
+    .dish h5{
+        font-size: 15px;
+    }
+    .dish__description{
+        font-size: 13px;
+    }
+    .btn-menu-completo a{
+        display: block;
+        font-size: 15px;
+    }
+}
+

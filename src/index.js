@@ -150,3 +150,39 @@ btnFondos.addEventListener("click",()=>{
         menuTextPlates.classList.add("hide-menu");
     }
 })
+
+/* Slider cumpleanos */
+
+const birthdayImgSlider = document.querySelector(".birthday-img__slider");
+const birthdaySection = document.querySelectorAll(".birthday-img__section");
+
+const birthdayBtnLeft = document.querySelector(".birthday__btn--left");
+const birthdayBtnRigth = document.querySelector(".birthday__btn--rigth");
+const lastElementBirthday = birthdaySection[birthdaySection.length - 1];
+birthdayImgSlider.insertAdjacentElement("afterbegin",lastElementBirthday);
+
+const nextBirthday = () =>{
+    const  firstElement = document.querySelectorAll(".birthday-img__section")[0];
+    birthdayImgSlider.style.marginLeft = "-200%";
+    birthdayImgSlider.style.transition = "all 1s";
+    
+    setTimeout(()=>{
+        birthdayImgSlider.style.transition = "none";
+        birthdayImgSlider.insertAdjacentElement("beforeend",firstElement);
+        birthdayImgSlider.style.marginLeft = "-100%";
+    },1000)
+}
+
+const previusBirthday = () =>{
+    const  lastElement = document.querySelectorAll(".birthday-img__section")[birthdaySection.length - 1];
+    birthdayImgSlider.style.marginLeft = "0%";
+    birthdayImgSlider.style.transition = "all 1s";
+    
+    setTimeout(()=>{
+        birthdayImgSlider.style.transition = "none";
+        birthdayImgSlider.insertAdjacentElement("afterbegin",lastElement);
+        birthdayImgSlider.style.marginLeft = "-100%";
+    },1000)
+}
+birthdayBtnRigth.addEventListener("click",()=>nextBirthday());
+birthdayBtnLeft.addEventListener("click",()=>previusBirthday());

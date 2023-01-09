@@ -552,7 +552,10 @@
 .birthday-bg{
     background-color: var(--colorOro);
     padding: 50px 0px;
+<<<<<<< HEAD
     margin: 40px 0px;
+=======
+>>>>>>> cc3d07c1401bd933e0f7b86f94a44e03e457ba5b
 }
 .birthday{
   display: grid;
@@ -564,6 +567,10 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+<<<<<<< HEAD
+=======
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6)
+>>>>>>> cc3d07c1401bd933e0f7b86f94a44e03e457ba5b
 }
 
 .birthday-img__slider{
@@ -613,15 +620,24 @@
     border-radius:  5px;
     font-family: var(--fuenteParrafos);
     font-size: 20px;
+<<<<<<< HEAD
     transition: 0.3s;
 }
 .birthday__info a:hover{
     color: #ffffff;
+=======
+}
+.birthday__info a:hover{
+
+>>>>>>> cc3d07c1401bd933e0f7b86f94a44e03e457ba5b
 }
 @media (max-width: 857px) {
     .birthday-bg{
         padding: 40px 0px;
+<<<<<<< HEAD
         margin: 30px 0px;
+=======
+>>>>>>> cc3d07c1401bd933e0f7b86f94a44e03e457ba5b
     }
     .birthday{
         grid-template-columns: repeat(1, 1fr);

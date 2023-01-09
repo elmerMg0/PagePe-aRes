@@ -27,7 +27,8 @@
     margin: auto;
 }
 .position-fixed{
-    position: fixed;
+    position: sticky;
+    top:0;
     width: 100%;
     z-index: 10;
 }
@@ -552,6 +553,7 @@
 .birthday-bg{
     background-color: var(--colorOro);
     padding: 50px 0px;
+    margin: 40px 0px;
 }
 .birthday{
   display: grid;
@@ -615,11 +617,12 @@
     font-size: 20px;
 }
 .birthday__info a:hover{
-
-}
+    color: #ffffff;
+}   
 @media (max-width: 857px) {
     .birthday-bg{
         padding: 40px 0px;
+        margin: 30px 0px;
     }
     .birthday{
         grid-template-columns: repeat(1, 1fr);

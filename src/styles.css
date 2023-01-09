@@ -548,3 +548,113 @@
     }
 }
 
+/* Seccion de cumpleaños */
+.birthday-bg{
+    background-color: var(--colorOro);
+    padding: 50px 0px;
+}
+.birthday{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  gap: 20px;
+}   
+.birthday-img{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6)
+}
+
+.birthday-img__slider{
+    display: flex;
+    width: 1300%;
+    height: 600px;
+    object-fit: cover;
+    margin-left: -100%;
+}
+.birthday-img__section{
+    width: 100%;
+}       
+
+.birthday-img__section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.birthday__btn--left{
+    left: 10px;
+}   
+.birthday__btn--rigth{
+    right: 10px;
+}   
+.birthday__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    color: var(--colorGreen);
+}
+.birthday__info h5{
+    font-family: var(--fuenteOld);
+    font-size: 25px;
+}
+.birthday__info p{
+    font-family: var(--fuenteParrafos);
+    font-size: 20px;
+}
+.birthday__info a{
+    color: var(--colorOro);
+    background-color: var(--colorGreen);
+    padding: 15px 10px;
+    border-radius:  5px;
+    font-family: var(--fuenteParrafos);
+    font-size: 20px;
+}
+.birthday__info a:hover{
+
+}
+@media (max-width: 857px) {
+    .birthday-bg{
+        padding: 40px 0px;
+    }
+    .birthday{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .birthday-img__slider{
+        height: 500px;
+    }  
+    .birthday__info{
+        gap: 15px;
+    }
+    .birthday__info h5{
+        font-size: 20px;
+    }
+    .birthday__info p{
+        font-size: 15px;
+    }
+    .birthday__info a{
+        font-size:  15px;
+    }
+}
+@media (max-width: 500px) {
+    .birthday-img__slider{
+        height: 300px;
+    } 
+    .birthday-bg{
+        padding: 30px 0px;
+    }
+    .birthday__info h5{
+        font-size: 15px;
+    }
+    .birthday__info p{
+        font-size: 13px;
+    }
+    .birthday__info a{
+        font-size: 13px;
+        padding: 10px 10px;
+    }
+}

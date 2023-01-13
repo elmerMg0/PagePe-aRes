@@ -438,9 +438,15 @@
     </section>
 
   
-    <div class="contact-bg">
+    <div class="contact-bg contenedor">
         <h5>Contacto</h5>
-        <div class="contact contenedor">
+        <div class="contact-numbers">
+            <p>71791674</p>
+            <p>4721154</p>
+            <p>dimas.restaurant14@gmail.com</p>
+        </div>
+        
+        <div class="contact">
             <img class="contact__img" src="./img/Entrada.jpeg" alt="foto de la entrada">
 
             <div class="contact__map">
@@ -453,14 +459,31 @@
 
 
     <!-- formulario -->
-    <form id="form" class="form" action="https://formspree.io/f/mzbwbeyk" method="POST">
-        <input   class="input" type="text" placeholder="nombre" name="name">
-        <input   class="input" type="text" placeholder="teléfono" name="telf">
-        <input   class="input" type="email" placeholder="email" name="email">
-        <textarea name="textarea" placeholder="mensaje"></textarea>
-        <input type="submit" name="btn" class="btn">  
-    </form>
-    <a href="mailto:dimas.restaurant14@gmail.com" id="trucazo"></a>
+    <form id="form" class="contenedor form">
+        <div class="field">
+          <input placeholder="Nombre" type="text" name="from_name" id="from_name">
+        </div>
+        <div class="field">
+          <input placeholder="Mensaje" type="text" name="message" id="message">
+        </div>
+        <div class="field">
+          <input placeholder="Correo" type="text" name="reply_to" id="reply_to">
+        </div>
+      
+        <input type="submit" id="button" value="Enviar email" >
+      </form>
+      
+    <!-- Footer -->
+    <footer>
+        <p>© Copyright Restaurant Dimas Bolivia. Todos los derechos reservados.</p>
+    </footer>
+
+      <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('y2hespweszkSlYfmj')
+</script>
  
 
         <script src="./index.js"></script>

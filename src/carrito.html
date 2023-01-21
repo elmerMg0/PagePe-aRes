@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+    
+    <!-- Fontawesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+        <!-- Google fonts0 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="position-fixed">
+        <!-- Navegaction secundaria -->
+            <div class="navegation-secondary-bg">
+            <div class="navegation-secondary"><!-- Bloque -->
+                <div class= "social-media">
+                    <ul class="navegation-secondary__icons social-media__icons">
+                        <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
+                        <li><a href="#"> <i class="fab fa-instagram"></i> </a>  </li>
+                        <li><a href="#"> <i class="fab fa-youtube"></i> </a></li>
+                    </ul>
+                </div>
+                <div class="number-contact">
+                    <ul class="navegation-secondary__icons number-contact__icons">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-mobile"></i>
+                                <span class="number-contact__icon"> 71791674</span>
+                            </a>
+                        </li>
+                        <li><a href="#"> <i class="fa fa-envelope"></i>
+                            <span class="number-contact__icon"> dimas.restaurant14@gmail.com</span></a></li>
+                        <li><a href="#"> <i class="fa fa-phone"></i><span class="number-contact__icon"> 4721154 </span></a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!-- Navegation primary  -->
+            <div class="navegation-primary-bg">
+            <div class="navegation-primary contenedor">
+                
+                    <div class="navegation-primary__logo">
+                    <img src="./img/LogoOro.png" alt="logo">
+                    <h4>Dimas Restaurant</h4>
+                    </div>
+
+                    <div class="carrito">
+                        <i class="carrito__icon fa-solid fa-cart-shopping"> <span class="carrito__number">0</span> </i>
+                    </div>
+
+                    <!-- <div class="navegation-primary__bars">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div> -->
+
+                    <!-- <nav class="navegation-primary__nav-bar">
+                        <ul>
+                            <li><a class="nav-bar-link link" href="">Restaurante</a></li>
+                            <li><a class="nav-bar-link" href="">Menú</a></li>
+                            <li><a class="nav-bar-link" href="">Ambientes</a></li>
+                            <li><a class="nav-bar-link" href="">Historia</a></li>
+                            <li><a class="contacto" href="">Contacto</a></li>
+                        </ul>
+                    </nav> -->
+                </div>
+            </div>
+       </div>
+    
+    <main class="products contenedor">
+    </main>
+
+    <section class="detail-product hide-menu">
+        <div class="detail-product-bg">
+            <h5>Resumen de pedido</h5>
+        </div>
+     
+        <table class="detail-product__table contenedor">
+        </table>
+
+        <div class="contenedor">
+            <button class="detail-product__continue">
+                Continuar
+            </button>
+        </div>
+        <!-- <div class="detail-product-bg">
+            <h5>Total (Bs.) <span class="total"></span> </h5>
+        </div> -->
+    </section>
+
+    <div class="modal show-modal">
+        <div class="modal-content">
+            <div class="modal-content__header">
+                <h5>Confirmar</h5>
+                <button>
+                <span class="btn-close">x</span>
+                </button>
+             </div>
+             <p>¿Está seguro de eliminar este producto?</p>
+        <div class="modal-content__btns">
+            <button class="btn-accept">Sí</button>
+            <button class="btn-cancel">No</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal-edit show-modal contenedor">
+        <div class="modal-content-edit">
+            <div class="modal-content-text">
+             
+            </div>
+           <!--  <div class="modal-content__dishes">
+
+            </div> -->
+
+            <div class="modal-edit__btns">
+                <div class="modal-edit__contador">
+                    
+                    <button class="modal-edit__minus">-</button>
+                    <input  onmouseout="updateContador()" class="contador" type="number" min="1" value="1">
+                    <button class="modal-edit__plus">+</button>
+                </div>
+                <button class="modal-btn__add">Agregar Bs.</button>
+            </div>
+            
+            <span class="btn-close__item">x</span>
+        </div>
+    </div>
+<!-- Modal delivery cliente hora -->
+    <div class="modal-order show-modal-order">
+        <div class="modal-order__view1">
+       
+        <div class="modal-order__header">
+            <div class="order-header__numbers">
+                <div class="order-header__number order_header_one active-number">
+                    <span>1</span>
+                </div>
+                <div class="order-header__number order_header_two">
+                    <span>2</span>
+                </div>
+            </div>
+            <span class="btn-close__order">x</span>
+        </div>
+        <div class="modal-order__container">
+
+            <div class="modal-order__deliMethod">
+                <h5>Forma de entrega</h5>
+                <div class="deliMethod-inputs">
+                    <div class="deliMethod-input">
+                        <input checked class="input-delivery" type="checkbox" name="" id="">
+                        <label for="">Delivery</label>
+                    </div>
+                    <div class="deliMethod-input">
+                        <input  class="input-recojo" type="checkbox" name="" id="">
+                        <label for="">Recojo</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-order__time">
+                <h5>Recibir la orden</h5>
+                <div class="modal-order__inputs">
+                    <div class="modal-oder__input">
+                        <input class="input-rightnow" type="checkbox" checked>
+                        <label for="">Ahora mismo</label>
+                    </div>
+                    <div class="modal-oder__input">
+                        <input class="input-later" type="checkbox">
+                        <label for="">Programar entrega</label>
+                    </div>
+                </div>
+                <div class="modal-order__dayhours">
+                    <div class="modal-order__dayhour">
+                        <p>Día</p>
+                        <input class="input-day" type="date">
+                    </div>
+                    <div class="modal-order__dayhour">
+                        <p>Hora</p>
+                        <input type="time" value="12:00">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-order__address">
+                <h5>Dirección de entrega</h5>
+                <li>
+                    <label for="">Dirección de entrega.*</label>
+                    <input type="text">
+                </li>
+                <li>    
+                    <label for="">Aclaración de dirección</label>
+                    <textarea placeholder="Casa naranja con puerta de color cafe."></textarea>
+                </li>
+            </div>
+
+            <div class="modal-order__place">
+                <h5>Dirección de recojo</h5>
+                <a href="">Av. villazon km. 6 1/2 acera sud</a>
+            </div>
+            <button class="modal-order__view1btn btn-next">Siguiente</button>
+        </div>
+
+        <div class="modal-order__view2">
+            <div class="modal-order__paymethod">
+                <h5>Método de pago</h5>
+                <div class="paymethod-inputs">
+                    <div class="paymethod-input">
+                        <input checked class="input-cash" type="checkbox" name="" id="">
+                        <label for="">Efectivo</label>
+                    </div>
+                    <div class="paymethod-input">
+                        <input  class="input-transferencia" type="checkbox" name="" id="">
+                        <label for="">Transferencia</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-order__resumen">
+                <h5>Resumen del pedido</h5>
+                <table class="modal-order__products">
+
+                </table>
+            </div>
+            <button class="modal-order__view1btn btn-whatsapp">Ordenar por whatsapp</button>
+        </div>
+        </div>
+
+        
+    </div>
+    <!-- Footer -->
+    <footer class="footer-corrito">
+        <p>© Copyright Restaurant Dimas Bolivia. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./carrito.js"></script>
+</body>
+</html>

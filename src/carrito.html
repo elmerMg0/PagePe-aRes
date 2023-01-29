@@ -16,7 +16,7 @@
     
     <title>Document</title>
 </head>
-<body>
+<body id="body">
 
     <div class="position-fixed">
         <!-- Navegaction secundaria -->
@@ -24,20 +24,20 @@
             <div class="navegation-secondary"><!-- Bloque -->
                 <div class= "social-media">
                     <ul class="navegation-secondary__icons social-media__icons">
-                        <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
-                        <li><a href="#"> <i class="fab fa-instagram"></i> </a>  </li>
-                        <li><a href="#"> <i class="fab fa-youtube"></i> </a></li>
+                        <li><a href="https://www.facebook.com/DimasRestaurant17/"> <i class="fab fa-facebook-f"></i> </a></li>
+                        <li><a href="https://instagram.com/dimas.restaurant?igshid=YmMyMTA2M2Y="> <i class="fab fa-instagram"></i> </a>  </li>
+                        <li><a href="https://youtube.com/channel/UCxfng14O3Yfx9KbeoQNBKjw"> <i class="fab fa-youtube"></i> </a></li>
                     </ul>
                 </div>
                 <div class="number-contact">
                     <ul class="navegation-secondary__icons number-contact__icons">
                         <li>
-                            <a href="#">
+                            <a href="https://wa.me/c/59171791674">
                                 <i class="fa fa-mobile"></i>
                                 <span class="number-contact__icon"> 71791674</span>
                             </a>
                         </li>
-                        <li><a href="#"> <i class="fa fa-envelope"></i>
+                        <li><a href="dimas.restaurant14@gmail.com"> <i class="fa fa-envelope"></i>
                             <span class="number-contact__icon"> dimas.restaurant14@gmail.com</span></a></li>
                         <li><a href="#"> <i class="fa fa-phone"></i><span class="number-contact__icon"> 4721154 </span></a></li>
                     </ul>
@@ -49,7 +49,9 @@
             <div class="navegation-primary contenedor">
                 
                     <div class="navegation-primary__logo">
-                    <img src="./img/LogoOro.png" alt="logo">
+                        <a href="index.html">
+                            <img src="./img/LogoOro.png" alt="logo">
+                        </a>
                     <h4>Dimas Restaurant</h4>
                     </div>
 
@@ -76,6 +78,8 @@
             </div>
        </div>
     
+    <div>
+    </div>
     <main class="products contenedor">
     </main>
 
@@ -113,7 +117,7 @@
         </div>
     </div>
 
-    <div class="modal-edit show-modal contenedor">
+    <div class="modal-edit show-modal">
         <div class="modal-content-edit">
             <div class="modal-content-text">
              
@@ -184,7 +188,7 @@
                     </div>
                     <div class="modal-order__dayhour">
                         <p>Hora</p>
-                        <input type="time" value="12:00">
+                        <input type="time" class="input-hour" value="12:00">
                     </div>
                 </div>
             </div>
@@ -192,11 +196,11 @@
                 <h5>Dirección de entrega</h5>
                 <li>
                     <label for="">Dirección de entrega.*</label>
-                    <input type="text">
+                    <input type="text" required class="input-address">
                 </li>
                 <li>    
                     <label for="">Aclaración de dirección</label>
-                    <textarea placeholder="Casa naranja con puerta de color cafe."></textarea>
+                    <textarea class="input-clarification" placeholder="Casa naranja con puerta de color cafe."></textarea>
                 </li>
             </div>
 
@@ -204,7 +208,9 @@
                 <h5>Dirección de recojo</h5>
                 <a href="">Av. villazon km. 6 1/2 acera sud</a>
             </div>
-            <button class="modal-order__view1btn btn-next">Siguiente</button>
+            <div class="contenedor_viewbtn">
+                <button class="modal-order__view1btn btn-next">Siguiente</button>
+            </div>
         </div>
 
         <div class="modal-order__view2">
@@ -227,7 +233,9 @@
 
                 </table>
             </div>
-            <button class="modal-order__view1btn btn-whatsapp">Ordenar por whatsapp</button>
+            <div class="contenedor_viewbtn">
+                <button class="modal-order__view1btn btn-whatsapp">Ordenar por whatsapp</button>
+            </div>
         </div>
         </div>
 

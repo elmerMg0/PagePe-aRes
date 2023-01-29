@@ -22,17 +22,17 @@ const productos = [
         entero: 0,
         name: "Pique Macho",
         price: 110.00,
-        image: "./img/PiqueMachoM.jpeg",
+        image: "./img/carritoPhots/PiqueMachoCF.jpg",
         description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate."
     },
     {
         cod: 2,
         cantidad: 1,
         entero: 0,
-        name: "Pique de Lomo",
-        price: 135.00,
-        image: "./img/carritoPhots/PiqueMacho.png",
-        description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate."
+        name: "Pique Especial Dimas",
+        price: 165.00,
+        image: "./img/carritoPhots/PiqueEspecialCF.jpg",
+        description: "Carne de pulpa, chorizo viena, chorizo parrillero, morcilla, pollo, ubre, papa frita, tomate y locoto."
     },
     {
         cod: 3,
@@ -40,54 +40,164 @@ const productos = [
         entero: 0,
         name: "Charque",
         price: 110,
-        image: "./img/",
-        description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate."
+        image: "./img/carritoPhots/CharqueCF.jpg",
+        description: "Carne de res, mote, huevos, quesillo, papa huayco."
     },
     {
         cod: 4,
         cantidad: 1,
         entero: 0,
-        name: "Planchita",
-        price: 110,
-        image: "./img/",
-        description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate."
+        name: "Picante de Lengua",
+        price: 67,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Lengua de res, papa blanca, arroz, chuño con huevo, aji y ensalada."
     },
     {
         cod: 5,
         cantidad: 1,
         entero: 0,
-        name: "Picante Lengua",
-        price: 110,
-        image: "./img/",
-        description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate."
+        name: "Picante de pollo",
+        price: 67,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Pollo, papa blanca, arroz, chuño con huevo, aji y ensalada."
     },
     {
         cod: 6,
         cantidad: 1,
-        entero: 0,
-        name: "Picante Pollo",
-        price: 110,
-        image: "./img/",
-        description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate."
+        entero: 1,
+        name: "Picante Mixto",
+        price: 67,
+        image: "./img/carritoPhots/PicanteLenguaCF.jpg",
+        description: "Lengua de res, pollo, papa blanca, arroz, chuño con huevo aji y ensalada."
     },
     {
         cod: 7,
         cantidad: 1,
         entero: 0,
-        name: "Picante Mixto",
-        price: 110,
-        image: "./img/",
-        description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate."
+        name: "Conejo lambreado",
+        price: 67,
+        image: "./img/carritoPhots/ConejoCF.jpg",
+        description: "Conejo, arroz, papa blanca, chuño con huevo y ensalada."
     },
     {
         cod: 8,
         cantidad: 1,
         entero: 0,
-        name: "Pique Especial Dimas",
+        name: "Picante de Conejo",
+        price: 67,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Conejo, arroz, papa blanca, chuño con huevo, aji y ensalada."
+    },
+    ,
+    {
+        cod: 9,
+        cantidad: 1,
+        entero: 0,
+        name: "Chank'a de Conejo",
+        price: 67,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Conejo, arroz, papa blanca, chuño con huevo y ensalada."
+    },
+    ,
+    {
+        cod: 10,
+        cantidad: 1,
+        entero: 0,
+        name: "Pato al vino",
+        price: 80,
+        image: "./img/carritoPhots/PatoVinoCF.jpg",
+        description: "Medio pato, arroz, papa dorada chuño con huevo, jugo y ensalada."
+    },
+    ,
+    {
+        cod: 11,
+        cantidad: 1,
+        entero: 0,
+        name: "Pato especial Dimas",
+        price: 150,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Pato entero, con guarniciones, arroz, papa dorada y ensalada."
+    },
+    ,
+    {
+        cod: 12,
+        cantidad: 1,
+        entero: 0,
+        name: "Planchita",
         price: 110,
-        image: "./img/BrazueloM.jpeg",
-        description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate."
-    }
+        image: "./img/carritoPhots/PlanchitaCFA.jpg",
+        description: "Churrascos, chorizo parrillero, chorizo viena, queso, huevos, yuca, papa frita, plátano y chorrellana."
+    },
+    ,
+    {
+        cod: 13,
+        cantidad: 1,
+        entero: 0,
+        name: "Lapping",
+        price: 67,
+        image: "./img/carritoPhots/LappingCF.jpg",
+        description: "Carne de res, arroz, choclo, papa y soltero con queso."
+    },
+    ,
+    {
+        cod: 14,
+        cantidad: 1,
+        entero: 0,
+        name: "Lomo a la paila",
+        price: 67,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Lomo de res, huevo, papa frita y caldo."
+    },
+    ,
+    {
+        cod: 15,
+        cantidad: 1,
+        entero: 0,
+        name: "Lomo montado",
+        price: 67,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Carne de res, huevo, arroz, papa frita y ensalada."
+    },
+    ,
+    {
+        cod: 16,
+        cantidad: 1,
+        entero: 0,
+        name: "Cordero costillar",
+        price: 67,
+        image: "./img/carritoPhots/CostillarCF.jpg",
+        description: "Costilla de cordero, arroz, papa frita y ensalada."
+    },
+    ,
+    {
+        cod: 17,
+        cantidad: 1,
+        entero: 0,
+        name: "Cordero Brazuelo",
+        price: 67,
+        image: "./img/carritoPhots/BrazueloCF.jpg",
+        description: "Carne de cordero, arroz, papa frita y ensalada."
+    },
+    ,
+    {
+        cod: 17,
+        cantidad: 1,
+        entero: 0,
+        name: "Milanesa de lomo",
+        price: 67,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Carne de res, huevo, arroz, papa frita y ensalada."
+    },
+    ,
+    {
+        cod: 17,
+        cantidad: 1,
+        entero: 0,
+        name: "Milanesa de pollo",
+        price: 62,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Milanesa de pollo, arroz, papa frita y ensalada."
+    },
 ] 
 /*  carrito */
 let carritoProducts = [];
@@ -134,7 +244,7 @@ function showProducts(){
                 <img src="${producto.image}" alt="Foto producto">
                 <h5>${producto.name}</h5> 
                 <p>${producto.description}</p> 
-                <p>Precio:${producto.price }</p> 
+                <p>Precio: ${producto.price }Bs</p> 
                 <button onclick = addProduct(${producto.cod})>Agregar a carrito</button>
             </div
         ` 
@@ -252,7 +362,7 @@ function showCarritoEmpty(){
     detail_product.innerHTML = `
         <div class="detail-product__empty contenedor">
             <h5>Tu carrito está vacío</h5>
-            <button>Ve al menú</button>
+            <button> <a href="carrito.html">Ve al menú </a></button>
         </div>
     `
 }
@@ -375,11 +485,16 @@ const modal_order_products = document.querySelector(".modal-order__products")
 const modal_order_view2 = document.querySelector(".modal-order__view2");
 const btn_next = document.querySelector(".btn-next");
 const btn_whatsapp = document.querySelector(".btn-whatsapp");
+const input_address = document.querySelector(".input-address");
+const input_clarification = document.querySelector(".input-clarification");
+const input_hour = document.querySelector(".input-hour");
 
-
+const body = document.getElementById("body");
 
 detail_product_continue.addEventListener("click", function(){
+    body.style.overflowY = "hidden";
     modal_order.classList.remove("show-modal-order");
+    modal_order_view2.style.display ="none";
     modal_order_place.style.display = "none"
     modal_order_dayhours.style.display = "none";
     modal_order_container.style.display = "block";
@@ -429,6 +544,7 @@ input_later.addEventListener("change",(e)=>{
 
 btn_closeOrder.addEventListener("click",()=>{
     modal_order.classList.add("show-modal-order");
+    body.style.overflowY = "auto"
 })
 
 
@@ -494,3 +610,48 @@ btn_next.addEventListener("click",()=>{
     modal_order_view2.style.display = "block";
     showDetailProduct();
 })
+
+btn_whatsapp.addEventListener("click" , () =>{
+    sendWhatsapp();
+    cleanStorage();
+    body.style.overflowY = "auto";
+})
+function cleanStorage(){
+    carritoProducts = [];
+    localStorage.removeItem("carrito");
+    localStorage.removeItem("item");
+    modal_order.classList.add("show-modal-order");
+    container_productos.classList.remove("hide-products");
+    detail_product.classList.add("hide-menu");
+    carrito_number.textContent = 0;
+}
+ 
+function sendWhatsapp(){
+    let sms = "Hola me gutaria relizar el siguiente pedido. %0A %0A";
+    let number = "65322739";
+    
+    carritoProducts.forEach( (prod, index) => {
+        sms += `${prod.cantidad}x  ${prod.name} %0A %0A`
+    })
+    sms += "Forma de entrega: "
+    if(input_delivery.checked){//validar direccion 
+        sms += "Delivery. %0A"
+    }else{
+        sms += "Recojo. %0A"
+    }
+    if(input_rightnow.checked){
+        sms = sms + "Orden: ahora mismo. %0A"
+    }else{
+        sms += `Orden: fecha:${input_day.value} hora:${input_hour.value}\n %0A`
+    }
+    sms += "Direccion de entrega: " + input_address.value + "%0A";
+    sms += input_clarification.value + "%0A"
+    if(input_cash.checked){
+        sms += `Método de pago: Efectivo`
+    }else{
+        sms += `Método de pago: Transferencia`
+    }
+
+
+    var win = window.open(`https://wa.me/${number}?text=%20${sms}`,'_blank')
+}

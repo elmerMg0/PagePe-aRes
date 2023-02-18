@@ -96,7 +96,6 @@ const productos = [
         description: "Conejo, arroz, papa blanca, chuño con huevo, aji y ensalada.",
         nota:""
     },
-    ,
     {
         cod: 9,
         cantidad: 1,
@@ -107,7 +106,6 @@ const productos = [
         description: "Conejo, arroz, papa blanca, chuño con huevo y ensalada.",
         nota:""
     },
-    ,
     {
         cod: 10,
         cantidad: 1,
@@ -118,7 +116,6 @@ const productos = [
         description: "Medio pato, arroz, papa dorada chuño con huevo, jugo y ensalada.",
         nota:""
     },
-    ,
     {
         cod: 11,
         cantidad: 1,
@@ -129,7 +126,6 @@ const productos = [
         description: "Pato entero, con guarniciones, arroz, papa dorada y ensalada.",
         nota:""
     },
-    ,
     {
         cod: 12,
         cantidad: 1,
@@ -140,7 +136,6 @@ const productos = [
         description: "Churrascos, chorizo parrillero, chorizo viena, queso, huevos, yuca, papa frita, plátano y chorrellana.",
         nota:""
     },
-    ,
     {
         cod: 13,
         cantidad: 1,
@@ -151,7 +146,6 @@ const productos = [
         description: "Carne de res, arroz, choclo, papa y soltero con queso.",
         nota:""
     },
-    ,
     {
         cod: 14,
         cantidad: 1,
@@ -162,7 +156,6 @@ const productos = [
         description: "Lomo de res, huevo, papa frita y caldo.",
         nota:""
     },
-    ,
     {
         cod: 15,
         cantidad: 1,
@@ -173,7 +166,6 @@ const productos = [
         description: "Carne de res, huevo, arroz, papa frita y ensalada.",
         nota:""
     },
-    ,
     {
         cod: 16,
         cantidad: 1,
@@ -184,7 +176,6 @@ const productos = [
         description: "Costilla de cordero, arroz, papa frita y ensalada.",
         nota:""
     },
-    ,
     {
         cod: 17,
         cantidad: 1,
@@ -195,9 +186,8 @@ const productos = [
         description: "Carne de cordero, arroz, papa frita y ensalada.",
         nota:""
     },
-    ,
     {
-        cod: 17,
+        cod: 18,
         cantidad: 1,
         entero: 0,
         name: "Milanesa de lomo",
@@ -206,9 +196,8 @@ const productos = [
         description: "Carne de res, huevo, arroz, papa frita y ensalada.",
         nota:""
     },
-    ,
     {
-        cod: 17,
+        cod: 19,
         cantidad: 1,
         entero: 0,
         name: "Milanesa de pollo",

@@ -40,7 +40,7 @@ const productos = [
         entero: 0,
         name: "Charque",
         price: 110,
-        image: "./img/carritoPhots/CharqueCF.jpg",
+        image: "./img/carritoPhots/CharqueCf.jpg",
         description: "Carne de res, mote, huevos, quesillo, papa huayco."
     },
     {
@@ -199,6 +199,7 @@ const productos = [
         description: "Milanesa de pollo, arroz, papa frita y ensalada."
     },
 ] 
+let productosFilter = [];
 /*  carrito */
 let carritoProducts = [];
 
@@ -223,6 +224,7 @@ const modal_content_dishes = document.querySelector(".modal-content__dishes")
 const modal_btn_add = document.querySelector(".modal-btn__add");
 const contador_productos = document.querySelector(".contador");
 const btn_close_item = document.querySelector(".btn-close__item");
+const input_search = document.querySelector(".input-search");
 
 let item_delete;
 let item_edit;
@@ -237,8 +239,11 @@ document.addEventListener("DOMContentLoaded",()=>{
     showProductsCar();
 })
 
-function showProducts(){
-    productos.forEach((producto,index)=>{
+function showProducts( ){
+    let productosFood = []; 
+    productosFilter.length > 0 ? productosFood = productosFilter: productosFood = productos
+    container_productos.innerHTML = "";
+    productosFood.forEach((producto,index)=>{
         container_productos.innerHTML += `
             <div class="products__element">
                 <img src="${producto.image}" alt="Foto producto">
@@ -453,6 +458,15 @@ btn_accept.addEventListener("click",()=>{
     }
 })
 
+input_search.addEventListener("input",(e)=>{
+    productosFilter = productos.filter( prod => prod.name.toLowerCase().includes(e.target.value))
+    console.log(productosFilter)
+    showProducts();
+})
+
+function handleInputChange (e){
+    console.log("e")
+}
 
 
 function saveStorage(){

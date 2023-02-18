@@ -23,7 +23,8 @@ const productos = [
         name: "Pique Macho",
         price: 110.00,
         image: "./img/carritoPhots/PiqueMachoCF.jpg",
-        description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate."
+        description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate.",
+        nota:""
     },
     {
         cod: 2,
@@ -32,7 +33,8 @@ const productos = [
         name: "Pique Especial Dimas",
         price: 165.00,
         image: "./img/carritoPhots/PiqueEspecialCF.jpg",
-        description: "Carne de pulpa, chorizo viena, chorizo parrillero, morcilla, pollo, ubre, papa frita, tomate y locoto."
+        description: "Carne de pulpa, chorizo viena, chorizo parrillero, morcilla, pollo, ubre, papa frita, tomate y locoto.",
+        nota:""
     },
     {
         cod: 3,
@@ -41,7 +43,8 @@ const productos = [
         name: "Charque",
         price: 110,
         image: "./img/carritoPhots/CharqueCf.jpg",
-        description: "Carne de res, mote, huevos, quesillo, papa huayco."
+        description: "Carne de res, mote, huevos, quesillo, papa huayco.",
+        nota:""
     },
     {
         cod: 4,
@@ -50,7 +53,8 @@ const productos = [
         name: "Picante de Lengua",
         price: 67,
         image: "./img/carritoPhots/OragenFondo.jpg",
-        description: "Lengua de res, papa blanca, arroz, chuño con huevo, aji y ensalada."
+        description: "Lengua de res, papa blanca, arroz, chuño con huevo, aji y ensalada.",
+        nota:""
     },
     {
         cod: 5,
@@ -59,7 +63,8 @@ const productos = [
         name: "Picante de pollo",
         price: 67,
         image: "./img/carritoPhots/OragenFondo.jpg",
-        description: "Pollo, papa blanca, arroz, chuño con huevo, aji y ensalada."
+        description: "Pollo, papa blanca, arroz, chuño con huevo, aji y ensalada.",
+        nota:""
     },
     {
         cod: 6,
@@ -68,7 +73,8 @@ const productos = [
         name: "Picante Mixto",
         price: 67,
         image: "./img/carritoPhots/PicanteLenguaCF.jpg",
-        description: "Lengua de res, pollo, papa blanca, arroz, chuño con huevo aji y ensalada."
+        description: "Lengua de res, pollo, papa blanca, arroz, chuño con huevo aji y ensalada.",
+        nota:""
     },
     {
         cod: 7,
@@ -77,7 +83,8 @@ const productos = [
         name: "Conejo lambreado",
         price: 67,
         image: "./img/carritoPhots/ConejoCF.jpg",
-        description: "Conejo, arroz, papa blanca, chuño con huevo y ensalada."
+        description: "Conejo, arroz, papa blanca, chuño con huevo y ensalada.",
+        nota:""
     },
     {
         cod: 8,
@@ -86,7 +93,8 @@ const productos = [
         name: "Picante de Conejo",
         price: 67,
         image: "./img/carritoPhots/OragenFondo.jpg",
-        description: "Conejo, arroz, papa blanca, chuño con huevo, aji y ensalada."
+        description: "Conejo, arroz, papa blanca, chuño con huevo, aji y ensalada.",
+        nota:""
     },
     ,
     {
@@ -96,7 +104,8 @@ const productos = [
         name: "Chank'a de Conejo",
         price: 67,
         image: "./img/carritoPhots/OragenFondo.jpg",
-        description: "Conejo, arroz, papa blanca, chuño con huevo y ensalada."
+        description: "Conejo, arroz, papa blanca, chuño con huevo y ensalada.",
+        nota:""
     },
     ,
     {
@@ -106,7 +115,8 @@ const productos = [
         name: "Pato al vino",
         price: 80,
         image: "./img/carritoPhots/PatoVinoCF.jpg",
-        description: "Medio pato, arroz, papa dorada chuño con huevo, jugo y ensalada."
+        description: "Medio pato, arroz, papa dorada chuño con huevo, jugo y ensalada.",
+        nota:""
     },
     ,
     {
@@ -116,7 +126,8 @@ const productos = [
         name: "Pato especial Dimas",
         price: 150,
         image: "./img/carritoPhots/OragenFondo.jpg",
-        description: "Pato entero, con guarniciones, arroz, papa dorada y ensalada."
+        description: "Pato entero, con guarniciones, arroz, papa dorada y ensalada.",
+        nota:""
     },
     ,
     {
@@ -126,7 +137,8 @@ const productos = [
         name: "Planchita",
         price: 110,
         image: "./img/carritoPhots/PlanchitaCFA.jpg",
-        description: "Churrascos, chorizo parrillero, chorizo viena, queso, huevos, yuca, papa frita, plátano y chorrellana."
+        description: "Churrascos, chorizo parrillero, chorizo viena, queso, huevos, yuca, papa frita, plátano y chorrellana.",
+        nota:""
     },
     ,
     {
@@ -136,7 +148,8 @@ const productos = [
         name: "Lapping",
         price: 67,
         image: "./img/carritoPhots/LappingCF.jpg",
-        description: "Carne de res, arroz, choclo, papa y soltero con queso."
+        description: "Carne de res, arroz, choclo, papa y soltero con queso.",
+        nota:""
     },
     ,
     {
@@ -146,7 +159,8 @@ const productos = [
         name: "Lomo a la paila",
         price: 67,
         image: "./img/carritoPhots/OragenFondo.jpg",
-        description: "Lomo de res, huevo, papa frita y caldo."
+        description: "Lomo de res, huevo, papa frita y caldo.",
+        nota:""
     },
     ,
     {
@@ -156,7 +170,8 @@ const productos = [
         name: "Lomo montado",
         price: 67,
         image: "./img/carritoPhots/OragenFondo.jpg",
-        description: "Carne de res, huevo, arroz, papa frita y ensalada."
+        description: "Carne de res, huevo, arroz, papa frita y ensalada.",
+        nota:""
     },
     ,
     {
@@ -166,7 +181,8 @@ const productos = [
         name: "Cordero costillar",
         price: 67,
         image: "./img/carritoPhots/CostillarCF.jpg",
-        description: "Costilla de cordero, arroz, papa frita y ensalada."
+        description: "Costilla de cordero, arroz, papa frita y ensalada.",
+        nota:""
     },
     ,
     {
@@ -176,7 +192,8 @@ const productos = [
         name: "Cordero Brazuelo",
         price: 67,
         image: "./img/carritoPhots/BrazueloCF.jpg",
-        description: "Carne de cordero, arroz, papa frita y ensalada."
+        description: "Carne de cordero, arroz, papa frita y ensalada.",
+        nota:""
     },
     ,
     {
@@ -186,7 +203,8 @@ const productos = [
         name: "Milanesa de lomo",
         price: 67,
         image: "./img/carritoPhots/OragenFondo.jpg",
-        description: "Carne de res, huevo, arroz, papa frita y ensalada."
+        description: "Carne de res, huevo, arroz, papa frita y ensalada.",
+        nota:""
     },
     ,
     {
@@ -196,7 +214,8 @@ const productos = [
         name: "Milanesa de pollo",
         price: 62,
         image: "./img/carritoPhots/OragenFondo.jpg",
-        description: "Milanesa de pollo, arroz, papa frita y ensalada."
+        description: "Milanesa de pollo, arroz, papa frita y ensalada.",
+        nota:""
     },
 ] 
 let productosFilter = [];

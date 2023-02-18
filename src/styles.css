@@ -1199,6 +1199,29 @@ th,td{
     background-color: #ffffff;
 }
 
+.modal-instruccion-especial{
+    padding: 15px;
+}
+.modal-instruccion-especial h5{
+    font-family: var(--fuenteParrafos);
+    font-size: 19px;
+    margin: 5px 0px;
+}
+.modal-instruccion-especial textarea{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    margin: 5px 0px;
+    outline: none;
+    font-size: 15px;
+    font-family: var(--fuenteParrafos);
+    box-sizing: border-box;
+    resize: none;
+    height: 40px;
+}
+
+
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -1208,7 +1231,7 @@ input[type=number]::-webkit-outer-spin-button {
 .modal-edit__header{
     position: relative;
     box-shadow: 0 7px 7px -10px black !important;
-    padding: 10px;
+    padding: 15px;
 }   
 
 .modal-edit__header h5{
@@ -1226,7 +1249,7 @@ input[type=number]::-webkit-outer-spin-button {
 } */
 .modal-edit__btns{
     display: flex;
-    padding: 10px 10px;
+    padding: 15px;
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
@@ -1255,6 +1278,8 @@ input[type=number]::-webkit-outer-spin-button {
 .contador{
     width: 40%;
     text-align: center;
+    border: none;
+    font-size: 20px;
 }
 .modal-edit__contador{
     display: flex;
@@ -1279,7 +1304,7 @@ input[type=number]::-webkit-outer-spin-button {
     right: 10px;
     top: 10px;
     color: rgb(147, 137, 137);
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     border: none;
     background-color: #ffffff;
@@ -1586,13 +1611,25 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* input-search */
 .search{
-    position: sticky;
+    position: relative;
+    margin-top: 25px;
 
+}
+.icon-search{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--colorGris);
 }
 .input-search{
     width: 100%;
-    padding: 5px;
-    margin-top: 15px;
+    padding: 10px;
     border: none;
-    border-bottom: 1px solid var(--colorLigth);
+    box-shadow: 0 2px 11px #a1999980;
+}
+
+@media( max-width: 758px){
+    .search{
+        margin-top: 15px;
+    }
 }

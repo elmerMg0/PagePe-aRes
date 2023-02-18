@@ -244,6 +244,7 @@ const modal_btn_add = document.querySelector(".modal-btn__add");
 const contador_productos = document.querySelector(".contador");
 const btn_close_item = document.querySelector(".btn-close__item");
 const input_search = document.querySelector(".input-search");
+const input_note = document.querySelector(".input-note");
 
 let item_delete;
 let item_edit;
@@ -335,11 +336,13 @@ function addProduct(cod){
 
 modal_btn_add.addEventListener("click", () =>{
     modal_edit.classList.add("show-modal");
+    item_edit.nota = input_note.value;
     let exist = carritoProducts.some(prod => prod.cod === item_edit.cod);
     if(exist){
         carritoProducts.map(prod =>{
             if(prod.cod === item_edit.cod){
                 //prod.cantidad = item_edit.cantidad;
+                prod.nota = input_note.value;
                 prod.cantidad = contador_productos.value;
             }
         })
@@ -442,8 +445,9 @@ function showModalEditItem(cod){
             <p>${item.description}</p>
         </div>
     `
+    input_note.value = item_edit.nota;
     contador_productos.value = item.cantidad;
-    modal_btn_add.textContent = `Agregar Bs.${item.price}` 
+    modal_btn_add.textContent = `Actualizar Bs.${item.price*item.cantidad}` 
 }
 
 function removeItem( cod ){

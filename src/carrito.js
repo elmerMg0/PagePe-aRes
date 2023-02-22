@@ -208,6 +208,7 @@ const productos = [
     },
 ] 
 let productosFilter = [];
+let productoNameFilter = "";
 /*  carrito */
 let carritoProducts = [];
 
@@ -248,21 +249,44 @@ document.addEventListener("DOMContentLoaded",()=>{
     showProductsCar();
 })
 
-function showProducts( ){
+function showProducts(){
     let productosFood = []; 
     productosFilter.length > 0 ? productosFood = productosFilter: productosFood = productos
     container_productos.innerHTML = "";
-    productosFood.forEach((producto,index)=>{
+    if(productoNameFilter === ""){
+        productosFood.forEach((producto,index)=>{
         container_productos.innerHTML += `
-            <div class="products__element">
-                <img src="${producto.image}" alt="Foto producto">
-                <h5>${producto.name}</h5> 
-                <p>${producto.description}</p> 
-                <p>Precio: ${producto.price }Bs</p> 
-                <button onclick = addProduct(${producto.cod})>Agregar a carrito</button>
-            </div
+        <div class="products__element">
+        <img src="${producto.image}" alt="Foto producto">
+        <h5>${producto.name}</h5> 
+        <p>${producto.description}</p> 
+        <p>Precio: ${producto.price }Bs</p> 
+        <button onclick = addProduct(${producto.cod})>Agregar a carrito</button>
+        </div
         ` 
-    })
+        })
+    }else if(productosFilter.length > 0){
+        container_productos.innerHTML = "";
+        productosFood.forEach((producto,index)=>{
+        container_productos.innerHTML += `
+        <div class="products__element">
+        <img src="${producto.image}" alt="Foto producto">
+        <h5>${producto.name}</h5> 
+        <p>${producto.description}</p> 
+        <p>Precio: ${producto.price }Bs</p> 
+        <button onclick = addProduct(${producto.cod})>Agregar a carrito</button>
+        </div
+        ` 
+        })
+    }else{
+        console.log(productoNameFilter)
+        container_productos.innerHTML = `
+            <div>
+                <h3>No encontramos ningun producto</h3>
+            </div>
+        `;
+        console.log("not found")
+    }
 }
 
 
@@ -471,7 +495,9 @@ btn_accept.addEventListener("click",()=>{
 })
 
 input_search.addEventListener("input",(e)=>{
-    productosFilter = productos.filter( prod => prod.name.toLowerCase().includes(e.target.value))
+    let inputNameProduct = e.target.value;
+    productosFilter = productos.filter( prod => prod.name.toLowerCase().includes(inputNameProduct.toLowerCase()))
+    productoNameFilter = e.target.value;
     console.log(productosFilter)
     showProducts();
 })

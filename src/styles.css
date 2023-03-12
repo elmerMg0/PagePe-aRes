@@ -24,6 +24,9 @@
     /* Titulos 25 20  15px  parrafos 20 15 13px */
 }
 /* Globales */
+html {
+    scroll-behavior: smooth;
+  }
 .contenedor{
     max-width: 1200px;
     width: 90%;
@@ -1187,7 +1190,7 @@ th,td{
     height: 100vh;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 500;
 }
 .modal-content-edit{
     position: absolute;
@@ -1317,7 +1320,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: rgba(0, 0, 0,0.5);
     position: fixed;
     top:0;
-    z-index: 20;
+    z-index: 500;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -1643,10 +1646,89 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media( max-width: 758px){
     .search{
-        margin-top: 15px;
+        margin-top: 5px auto 5px auto;
     }
     .contenedor-seach{
         top: 101px;
     }
 
+}
+.not-found-producto{
+    text-align: center;
+}
+.bts-dishes{
+    background-color: white;
+    position: sticky;
+    top: 100px;
+    z-index: 400;
+    display: flex;
+    justify-content: center;
+}
+
+/* .bts-dishes button{
+    text-decoration: none;
+    border: none;
+    padding: 10px 15px;
+}
+.bts-dishes button a{
+    color: var(--colorOro);
+    font-family: var(--fuenteParrafos);
+    font-size: 15px;
+    font-weight: 600;   
+    transition: 0.5s;
+    text-decoration: none;
+}
+.bts-dishes button a:hover{
+    color: var(--colorGreen);
+} */
+
+.order-here{
+    background-color: rgb(166, 31, 31);
+    color: #ffffff;
+    /* width: 67px;
+    height: 70px; */
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: fixed;  
+    z-index: 50;
+    bottom: 60px;
+    right: 110px;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+    font-weight: 600;
+    
+}
+.order-here a{
+    color: #ffffff;
+    font-family: var(--fuenteParrafos);
+}
+.order-here:hover{
+    background-color: var(--colorOro);
+}
+.order-here:hover i{
+    color: var(--colorGreen);
+}
+.order-here:hover a{
+    color: var(--colorGreen);
+}
+@media ( max-width: 758px){
+    .order-here{
+        bottom: 40px;
+        right: 40px;
+    }
+}
+@media ( max-width: 500px){
+    .order-here{
+        bottom: 25px;
+        right: 25px;
+       /*  width: 52px;
+        height: 55px; */
+    }
+    .order-here a{
+        font-size: 11px;
+    }
+}
+.carrito__icon_order{
+    color: white;
 }

@@ -52,7 +52,7 @@ const productos = [
         entero: 0,
         name: "Picante de Lengua",
         price: 67,
-        image: "./img/carritoPhots/OragenFondo.jpg",
+        image: "./img/carritoPhots/PicanteLenguaCF2.jpg",
         description: "Lengua de res, papa blanca, arroz, chuño con huevo, aji y ensalada.",
         nota:""
     },
@@ -61,7 +61,7 @@ const productos = [
         cantidad: 1,
         entero: 0,
         name: "Picante de pollo",
-        price: 67,
+        price: 62,
         image: "./img/carritoPhots/OragenFondo.jpg",
         description: "Pollo, papa blanca, arroz, chuño con huevo, aji y ensalada.",
         nota:""
@@ -102,7 +102,7 @@ const productos = [
         entero: 0,
         name: "Chank'a de Conejo",
         price: 67,
-        image: "./img/carritoPhots/OragenFondo.jpg",
+        image: "./img/carritoPhots/ChankaConejoCF2.jpg",
         description: "Conejo, arroz, papa blanca, chuño con huevo y ensalada.",
         nota:""
     },
@@ -206,6 +206,107 @@ const productos = [
         description: "Milanesa de pollo, arroz, papa frita y ensalada.",
         nota:""
     },
+    {
+        cod: 20,
+        cantidad: 1,
+        entero: 0,
+        name: "Pique de lomo",
+        price: 135,
+        image: "./img/carritoPhots/PiqueMacho.jpg",
+        description: "Carne de lomo, chorizo, papa frita, locoto y tomate",
+        nota:""
+    },
+    {
+        cod: 21,
+        cantidad: 1,
+        entero: 0,
+        name: "Lomo con Chorrellana",
+        price: 67,
+        image: "./img/carritoPhots/LomoChorrellanaCF.jpg",
+        description: "Carne de lomo, chorizo, papa frita, locoto y tomate",
+        nota:""
+    },
+    {
+        cod: 22,
+        cantidad: 1.00,
+        entero: "medio",
+        name: "Medio Pique Macho",
+        price: 90.00,
+        image: "./img/carritoPhots/PiqueMachoCF.jpg",
+        description: "Carne de res de pulpa, chorizo viena, papa frita locoto y tomate.",
+        nota:""
+    },
+    {
+        cod: 23,
+        cantidad: 1,
+        entero: 0,
+        name: "Medio Charque",
+        price: 85,
+        image: "./img/carritoPhots/CharqueCf.jpg",
+        description: "Carne de res, mote, huevos, quesillo, papa huayco.",
+        nota:""
+    },
+    {
+        cod: 24,
+        cantidad: 1,
+        entero: 0,
+        name: "Medio Picante de Lengua",
+        price: 57,
+        image: "./img/carritoPhots/PicanteLenguaCF2.jpg",
+        description: "Lengua de res, papa blanca, arroz, chuño con huevo, aji y ensalada.",
+        nota:""
+    },
+    {
+        cod: 25,
+        cantidad: 1,
+        entero: 0,
+        name: "Medio Picante de pollo",
+        price: 52,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Pollo, papa blanca, arroz, chuño con huevo, aji y ensalada.",
+        nota:""
+    },
+    {
+        cod: 26,
+        cantidad: 1,
+        entero: 1,
+        name: "Medio Picante Mixto",
+        price: 57,
+        image: "./img/carritoPhots/PicanteLenguaCF.jpg",
+        description: "Lengua de res, pollo, papa blanca, arroz, chuño con huevo aji y ensalada.",
+        nota:""
+    },
+    {
+        cod: 27,
+        cantidad: 1,
+        entero: 0,
+        name: "Medio Lapping",
+        price: 57,
+        image: "./img/carritoPhots/LappingCF.jpg",
+        description: "Carne de res, arroz, choclo, papa y soltero con queso.",
+        nota:""
+    },
+    {
+        cod: 28,
+        cantidad: 1,
+        entero: 0,
+        name: "Medio Lomo montado",
+        price: 57,
+        image: "./img/carritoPhots/OragenFondo.jpg",
+        description: "Carne de res, huevo, arroz, papa frita y ensalada.",
+        nota:""
+    },
+    {
+        cod: 29,
+        cantidad: 1,
+        entero: 0,
+        name: "Medio Lomo con Chorrellana",
+        price: 57,
+        image: "./img/carritoPhots/LomoChorrellanaCF.jpg",
+        description: "Carne de res, huevo, arroz, papa frita y chorrellana.",
+        nota:""
+    },
+
 ] 
 let productosFilter = [];
 let productoNameFilter = "";
@@ -235,7 +336,7 @@ const contador_productos = document.querySelector(".contador");
 const btn_close_item = document.querySelector(".btn-close__item");
 const input_search = document.querySelector(".input-search");
 const input_note = document.querySelector(".input-note");
-
+const btn_wholeDish = document.querySelector(".btn-wholeDish")
 let item_delete;
 let item_edit;
 /* information about place and curtomer */
@@ -281,7 +382,7 @@ function showProducts(){
     }else{
         console.log(productoNameFilter)
         container_productos.innerHTML = `
-            <div>
+            <div class="not-found-producto">
                 <h3>No encontramos ningun producto</h3>
             </div>
         `;
@@ -395,6 +496,7 @@ carrito.addEventListener("click",()=>{
         console.log("carrit empty")
          showCarritoEmpty();
     }
+    contenedor_seach.style.display = "none"
 })
 
 function showCarritoEmpty(){
@@ -540,6 +642,7 @@ const btn_whatsapp = document.querySelector(".btn-whatsapp");
 const input_address = document.querySelector(".input-address");
 const input_clarification = document.querySelector(".input-clarification");
 const input_hour = document.querySelector(".input-hour");
+const contenedor_seach = document.querySelector(".contenedor-seach")
 
 const body = document.getElementById("body");
 
@@ -680,7 +783,7 @@ function cleanStorage(){
  
 function sendWhatsapp(){
     let sms = "Hola me gutaria relizar el siguiente pedido. %0A %0A";
-    let number = "65322739";
+    let number = "71791674";
     
     carritoProducts.forEach( (prod, index) => {
         sms += `${prod.cantidad}x  ${prod.name} %0A %0A`

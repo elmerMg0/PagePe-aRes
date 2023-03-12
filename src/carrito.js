@@ -212,7 +212,7 @@ const productos = [
         entero: 0,
         name: "Pique de lomo",
         price: 135,
-        image: "./img/carritoPhots/PiqueMacho.jpg",
+        image: "./img/carritoPhots/PiqueMachoCF.jpg",
         description: "Carne de lomo, chorizo, papa frita, locoto y tomate",
         nota:""
     },
